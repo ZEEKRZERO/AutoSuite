@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/about.png</file>
+        <file>icons/application-exit.png</file>
+        <file>icons/clear.png</file>
+        <file>icons/connect.png</file>
+        <file>icons/ConnectParamSet.png</file>
+        <file>icons/disconnect.png</file>
+        <file>icons/help.png</file>
+        <file>icons/zeekr.png</file>
+        <file>icons/setting.svg</file>
+        <file>icons/dataQuery.svg</file>
+        <file>icons/basicData.svg</file>
+        <file>icons/dataSniff.svg</file>
+        <file>icons/dbcDeocde.svg</file>
+        <file>icons/autoSuite.png</file>
+        <file>icons/send.png</file>
+        <file>icons/fileDecode.svg</file>
+        <file>icons/dataBase.svg</file>
+        <file>icons/swLanguage.svg</file>
+    </qresource>
+</RCC>

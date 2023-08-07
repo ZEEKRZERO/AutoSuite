@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1680</width>
+    <height>960</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>AutoSuite v1 Designed by ZEEKR ZERO</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resource.qrc">
+    <normaloff>:/icons/zeekr.png</normaloff>:/icons/zeekr.png</iconset>
+  </property>
+  <property name="toolTip">
+   <string/>
+  </property>
+  <property name="statusTip">
+   <string>AutoSuite v1.0 </string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QSplitter" name="splitter_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QSplitter" name="splitter">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="childrenCollapsible">
+        <bool>true</bool>
+       </property>
+       <widget class="QMdiArea" name="mdiArea_main">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>1280</width>
+          <height>600</height>
+         </size>
+        </property>
+        <property name="sizeAdjustPolicy">
+         <enum>QAbstractScrollArea::AdjustIgnored</enum>
+        </property>
+        <property name="background">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>240</red>
+           <green>245</green>
+           <blue>251</blue>
+          </color>
+         </brush>
+        </property>
+        <property name="viewMode">
+         <enum>QMdiArea::TabbedView</enum>
+        </property>
+        <property name="documentMode">
+         <bool>true</bool>
+        </property>
+        <property name="tabsClosable">
+         <bool>true</bool>
+        </property>
+        <property name="tabsMovable">
+         <bool>true</bool>
+        </property>
+        <property name="tabShape">
+         <enum>QTabWidget::Rounded</enum>
+        </property>
+        <property name="tabPosition">
+         <enum>QTabWidget::North</enum>
+        </property>
+       </widget>
+       <widget class="QTabWidget" name="tabWidget_info">
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="tab_3">
+         <attribute name="title">
+          <string>Tips</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <spacer name="horizontalSpacer">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_clearAppPrint">
+              <property name="text">
+               <string>Clear tips</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="0">
+           <widget class="QGroupBox" name="groupBox">
+            <property name="title">
+             <string/>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_2">
+             <item row="0" column="0">
+              <widget class="QTextBrowser" name="textBrowser_appPrint">
+               <property name="frameShape">
+                <enum>QFrame::NoFrame</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Sunken</enum>
+               </property>
+               <property name="lineWidth">
+                <number>1</number>
+               </property>
+               <property name="lineWrapMode">
+                <enum>QTextEdit::WidgetWidth</enum>
+               </property>
+               <property name="overwriteMode">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_4">
+         <attribute name="title">
+          <string>Terminal</string>
+         </attribute>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1680</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Equipment management</string>
+    </property>
+    <addaction name="action_Connect"/>
+    <addaction name="action_Disconnect"/>
+    <addaction name="action_connectParamSet"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="action_swLanguage"/>
+    <addaction name="action_helpDoc"/>
+    <addaction name="action_about"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>Function list</string>
+    </property>
+    <addaction name="action_rawDis"/>
+    <addaction name="action_sniff"/>
+    <addaction name="action_signalFuzz"/>
+    <addaction name="action_send_data"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>Data management</string>
+    </property>
+    <widget class="QMenu" name="menu_5">
+     <property name="title">
+      <string>Import database</string>
+     </property>
+     <addaction name="action_dbcDecode"/>
+     <addaction name="action_addFlexRayDB"/>
+     <addaction name="action_addLinDB"/>
+     <addaction name="action_addEthernetDB"/>
+    </widget>
+    <addaction name="menu_5"/>
+    <addaction name="action_historyQuery"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <property name="floatable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_Connect"/>
+   <addaction name="action_Disconnect"/>
+   <addaction name="separator"/>
+   <addaction name="action_sniff"/>
+   <addaction name="action_signalFuzz"/>
+   <addaction name="action_send_data"/>
+   <addaction name="separator"/>
+   <addaction name="action_dbcDecode"/>
+   <addaction name="action_historyQuery"/>
+  </widget>
+  <action name="action_Connect">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/connect.png</normaloff>:/icons/connect.png</iconset>
+   </property>
+   <property name="text">
+    <string>Connect</string>
+   </property>
+   <property name="toolTip">
+    <string>Connect</string>
+   </property>
+  </action>
+  <action name="action_Disconnect">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/disconnect.png</normaloff>:/icons/disconnect.png</iconset>
+   </property>
+   <property name="text">
+    <string>Disconnect</string>
+   </property>
+   <property name="toolTip">
+    <string>Disconnect</string>
+   </property>
+  </action>
+  <action name="action_connectParamSet">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/ConnectParamSet.png</normaloff>:/icons/ConnectParamSet.png</iconset>
+   </property>
+   <property name="text">
+    <string>Set device parameters</string>
+   </property>
+   <property name="toolTip">
+    <string>Set device parameters</string>
+   </property>
+  </action>
+  <action name="action_about">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/about.png</normaloff>:/icons/about.png</iconset>
+   </property>
+   <property name="text">
+    <string>About us</string>
+   </property>
+   <property name="toolTip">
+    <string>About us</string>
+   </property>
+  </action>
+  <action name="action_rawDis">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/basicData.svg</normaloff>:/icons/basicData.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Byte stream</string>
+   </property>
+   <property name="toolTip">
+    <string>Byte stream</string>
+   </property>
+  </action>
+  <action name="action_sniff">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/dataSniff.svg</normaloff>:/icons/dataSniff.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Sniffing</string>
+   </property>
+   <property name="toolTip">
+    <string>Sniffing</string>
+   </property>
+  </action>
+  <action name="action_historyQuery">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/dataQuery.svg</normaloff>:/icons/dataQuery.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Data query</string>
+   </property>
+   <property name="toolTip">
+    <string>Data query</string>
+   </property>
+  </action>
+  <action name="action_signalFuzz">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/dbcDeocde.svg</normaloff>:/icons/dbcDeocde.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Signal FUZZ</string>
+   </property>
+   <property name="toolTip">
+    <string>Signal FUZZ</string>
+   </property>
+  </action>
+  <action name="action_send_data">
+   <property name="icon">
+    <iconset>
+     <normalon>:/icons/send.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Send bus data</string>
+   </property>
+   <property name="toolTip">
+    <string>Send bus data</string>
+   </property>
+  </action>
+  <action name="action_dbcDecode">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/fileDecode.svg</normaloff>:/icons/fileDecode.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Import CAN database</string>
+   </property>
+   <property name="toolTip">
+    <string>Import CAN database</string>
+   </property>
+  </action>
+  <action name="action_addFlexRayDB">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/fileDecode.svg</normaloff>:/icons/fileDecode.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Import the FlexRay database</string>
+   </property>
+   <property name="toolTip">
+    <string>Import the FlexRay database</string>
+   </property>
+  </action>
+  <action name="action_addLinDB">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/fileDecode.svg</normaloff>:/icons/fileDecode.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Import LIN database</string>
+   </property>
+   <property name="toolTip">
+    <string>Import LIN database</string>
+   </property>
+  </action>
+  <action name="action_addEthernetDB">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/fileDecode.svg</normaloff>:/icons/fileDecode.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Importing Ethernet database</string>
+   </property>
+   <property name="toolTip">
+    <string>Importing Ethernet database</string>
+   </property>
+  </action>
+  <action name="action_helpDoc">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/help.png</normaloff>:/icons/help.png</iconset>
+   </property>
+   <property name="text">
+    <string>Contact us</string>
+   </property>
+   <property name="toolTip">
+    <string>Contact us</string>
+   </property>
+  </action>
+  <action name="action_swLanguage">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/swLanguage.svg</normaloff>:/icons/swLanguage.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Language</string>
+   </property>
+   <property name="toolTip">
+    <string>Language</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

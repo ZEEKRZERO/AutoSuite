@@ -1,0 +1,4 @@
+
+set basePath=%cd%
+echo generate files
+pause
