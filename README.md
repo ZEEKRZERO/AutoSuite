@@ -1,5 +1,5 @@
 ![harware](/Hardware/autosuite.jpg)
-![software1](/Software/AutoSuite/screenshot/Snipaste_2023-08-04_16-35-06.png)
+![software1](/Software/screenshot/Snipaste_2023-08-04_16-35-06.png)
 
 # AutoSuite
 Autosuite:an open source multi-protocol low-cost vehicle bus testing framework 
