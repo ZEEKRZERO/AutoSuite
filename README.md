@@ -42,10 +42,12 @@ python mainWindow.py
 ### Create EXE
 Run AutoSuite/Software/pack.bat
 ## Reference
-* [Getting Started with the DEVKIT-MPC5748G](https://www.nxp.com/document/guide/getting-started-with-the-devkit-mpc5748g:NGS-DEVKIT-MPC5748G) 
+* [MPC5748G Microcontroller Data Sheet](https://www.nxp.com.cn/docs/en/data-sheet/MPC5748G.pdf) 
+* [MPC5748G Hardware Design Guidelines](https://www.nxp.com/webapp/Download?colCode=AN5220) 
+* [MPC574xG SDK Hands On Training](https://www.nxp.com/webapp/Download?colCode=MPC574xG-SDK-HOT) 
 * [openpilot/flexray_adapter/](https://github.com/nanamiwang/openpilot/tree/flexray_bounty/flexray_adapter) 
 * [opendbc](https://github.com/commaai/opendbc) 
-* FlexRay Protocol Specification Version 2.1 Revision A   
+* [FlexRay Protocol Specification Version 2.1 Revision A](https://www.softwareresearch.net/fileadmin/src/docs/teaching/SS08/PS_VS/FlexRayCommunicationSystem.pdf)    
 ## Licensing
 MIT License
 
