@@ -270,7 +270,7 @@ class Ui_Dialog_sniffDataSetting(object):
 
         self.retranslateUi(Dialog_sniffDataSetting)
 
-        self.tabWidget.setCurrentIndex(0)
+        self.tabWidget.setCurrentIndex(1)
 
 
         QMetaObject.connectSlotsByName(Dialog_sniffDataSetting)
@@ -291,15 +291,15 @@ class Ui_Dialog_sniffDataSetting(object):
         self.checkBox_key_data.setText(QCoreApplication.translate("Dialog_sniffDataSetting", u"Data", None))
         self.checkBox_key_timestamp.setText(QCoreApplication.translate("Dialog_sniffDataSetting", u"Timestamp", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), QCoreApplication.translate("Dialog_sniffDataSetting", u"Sniff field", None))
-        self.groupBox_2.setTitle(QCoreApplication.translate("Dialog_sniffDataSetting", u"ID\u8fc7\u6ee4", None))
-        self.label.setText(QCoreApplication.translate("Dialog_sniffDataSetting", u"ID\u63a9\u7801", None))
-        self.label_4.setText(QCoreApplication.translate("Dialog_sniffDataSetting", u"\u76ee\u6807ID", None))
-        self.radioButton_and.setText(QCoreApplication.translate("Dialog_sniffDataSetting", u"\u4e0e", None))
-        self.radioButton_or.setText(QCoreApplication.translate("Dialog_sniffDataSetting", u"\u6216", None))
-        self.groupBox_3.setTitle(QCoreApplication.translate("Dialog_sniffDataSetting", u"\u6570\u636e\u8fc7\u6ee4", None))
-        self.label_2.setText(QCoreApplication.translate("Dialog_sniffDataSetting", u"\u6570\u636e\u63a9\u7801", None))
-        self.label_5.setText(QCoreApplication.translate("Dialog_sniffDataSetting", u"\u76ee\u6807\u6570\u636e", None))
-        self.checkBox_isEnableFilter.setText(QCoreApplication.translate("Dialog_sniffDataSetting", u"\u542f\u7528\u8fc7\u6ee4\u5668", None))
+        self.groupBox_2.setTitle(QCoreApplication.translate("Dialog_sniffDataSetting", u"ID", None))
+        self.label.setText(QCoreApplication.translate("Dialog_sniffDataSetting", u"ID mask", None))
+        self.label_4.setText(QCoreApplication.translate("Dialog_sniffDataSetting", u"Target ID", None))
+        self.radioButton_and.setText(QCoreApplication.translate("Dialog_sniffDataSetting", u"and", None))
+        self.radioButton_or.setText(QCoreApplication.translate("Dialog_sniffDataSetting", u"or", None))
+        self.groupBox_3.setTitle(QCoreApplication.translate("Dialog_sniffDataSetting", u"Data", None))
+        self.label_2.setText(QCoreApplication.translate("Dialog_sniffDataSetting", u"Data mask", None))
+        self.label_5.setText(QCoreApplication.translate("Dialog_sniffDataSetting", u"Target data", None))
+        self.checkBox_isEnableFilter.setText(QCoreApplication.translate("Dialog_sniffDataSetting", u"Enable filter", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), QCoreApplication.translate("Dialog_sniffDataSetting", u"Filter", None))
     # retranslateUi
 

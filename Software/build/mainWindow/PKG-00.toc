@@ -1,4 +1,4 @@
-('D:\\AutoHostDep\\code\\autoSuite\\AutoSuite-1.2\\AutoSuite\\build\\mainWindow\\mainWindow.pkg',
+('D:\\AutoHostDep\\code\\autoSuite\\AutoSuite-1.2\\AutoSuite\\build\\mainWindow\\AutoSuite.pkg',
  {'BINARY': True,
   'DATA': True,
   'EXECUTABLE': True,

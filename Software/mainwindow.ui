@@ -178,7 +178,7 @@
    </property>
    <widget class="QMenu" name="menu">
     <property name="title">
-     <string>Equipment management</string>
+     <string>Device</string>
     </property>
     <addaction name="action_Connect"/>
     <addaction name="action_Disconnect"/>
@@ -195,7 +195,7 @@
    </widget>
    <widget class="QMenu" name="menu_3">
     <property name="title">
-     <string>Function list</string>
+     <string>Functions</string>
     </property>
     <addaction name="action_rawDis"/>
     <addaction name="action_sniff"/>
@@ -204,7 +204,7 @@
    </widget>
    <widget class="QMenu" name="menu_4">
     <property name="title">
-     <string>Data management</string>
+     <string>Data</string>
     </property>
     <widget class="QMenu" name="menu_5">
      <property name="title">
@@ -368,7 +368,7 @@
     </iconset>
    </property>
    <property name="text">
-    <string>Send bus data</string>
+    <string>Send data</string>
    </property>
    <property name="toolTip">
     <string>Send bus data</string>
@@ -380,7 +380,7 @@
      <normaloff>:/icons/fileDecode.svg</normaloff>:/icons/fileDecode.svg</iconset>
    </property>
    <property name="text">
-    <string>Import CAN database</string>
+    <string>CAN database</string>
    </property>
    <property name="toolTip">
     <string>Import CAN database</string>
@@ -392,7 +392,7 @@
      <normaloff>:/icons/fileDecode.svg</normaloff>:/icons/fileDecode.svg</iconset>
    </property>
    <property name="text">
-    <string>Import the FlexRay database</string>
+    <string>FlexRay database</string>
    </property>
    <property name="toolTip">
     <string>Import the FlexRay database</string>
@@ -404,10 +404,10 @@
      <normaloff>:/icons/fileDecode.svg</normaloff>:/icons/fileDecode.svg</iconset>
    </property>
    <property name="text">
-    <string>Import LIN database</string>
+    <string>LIN database</string>
    </property>
    <property name="toolTip">
-    <string>Import LIN database</string>
+    <string>LIN database</string>
    </property>
   </action>
   <action name="action_addEthernetDB">
@@ -416,10 +416,10 @@
      <normaloff>:/icons/fileDecode.svg</normaloff>:/icons/fileDecode.svg</iconset>
    </property>
    <property name="text">
-    <string>Importing Ethernet database</string>
+    <string>Ethernet database</string>
    </property>
    <property name="toolTip">
-    <string>Importing Ethernet database</string>
+    <string>Ethernet database</string>
    </property>
   </action>
   <action name="action_helpDoc">

@@ -5,6 +5,7 @@
 
 from PySide6 import QtWidgets
 from PySide6.QtCore import Signal, Slot
+from PySide6.QtWidgets import QFileDialog
 
 import serial
 import serial.tools.list_ports
@@ -54,8 +55,8 @@ class Dialog_connectParamSet(QtWidgets.QDialog):
         self.ui.comboBox_connectMode.insertItem(2, "USB")
 
         # fr配置选择
-        self.ui.comboBox_cfgFile.insertItem(0, "NodeSend")
-        self.ui.comboBox_cfgFile.insertItem(1, "NodeRecv")
+        self.ui.comboBox_cfgFile.insertItem(0, "NodeSend.xml")
+        self.ui.comboBox_cfgFile.insertItem(1, "NodeRecv.xml")
 
         # can配置选择
         self.ui.comboBox_canCfg_spd.insertItem(0, "500K")
@@ -86,7 +87,7 @@ class Dialog_connectParamSet(QtWidgets.QDialog):
             self.ui.comboBox_connectMode.blockSignals(False)
             self.ui.stackedWidget.setCurrentIndex(self.ui.comboBox_connectMode.currentIndex())
             # FR
-            self.ui.comboBox_cfgFile.setCurrentText(self.connectParamDict["FRCfg"]["NODE"])
+            self.ui.comboBox_cfgFile.setCurrentText(self.connectParamDict["FRCfg"]["NODE"]+".xml")
             # CAN
             self.ui.comboBox_canCfg_spd.setCurrentText(self.connectParamDict["CANCfg"]["SPD"])
             if self.connectParamDict["CANCfg"]["RES120"] == "ENABLE":
@@ -132,7 +133,7 @@ class Dialog_connectParamSet(QtWidgets.QDialog):
     def on_pushButton_ok_clicked(self) :
     
         # FR
-        self.connectParamDict["FRCfg"]["NODE"] = self.ui.comboBox_cfgFile.currentText()
+        self.connectParamDict["FRCfg"]["NODE"] = self.ui.comboBox_cfgFile.currentText().split(".")[0]
         # CAN
         self.connectParamDict["CANCfg"]["SPD"] == self.ui.comboBox_canCfg_spd.currentText()
         if self.ui.checkBox_canCfg_r120.isChecked():
@@ -166,6 +167,18 @@ class Dialog_connectParamSet(QtWidgets.QDialog):
     def on_pushButton_cancel_clicked(self):
         # 退出对话框
         self.reject()
+
+    @Slot()
+    def on_pushButton_newNode_clicked(self):
+        # 创建文件选择对话框实例
+        file_dialog = QFileDialog(self)
+        # 设置对话框选项
+        file_dialog.setDirectory("./data/frNodeCfg")
+        file_dialog.setFileMode(QFileDialog.ExistingFile) 
+        # 显示对话框并获取选择的文件
+        selected_file, _ = file_dialog.getOpenFileName(caption="Open xml File",filter="XML files (*.xml)")
+        if selected_file:
+            pass
 
     # 连接参数更新信号
     signal_CfgParam_connect_update = Signal()

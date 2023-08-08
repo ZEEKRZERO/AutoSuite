@@ -63,7 +63,7 @@ class Dialog_sniffDataSetting(QtWidgets.QDialog):
         self.cfgParam_sniffData_dict = AppUtilitiesClass.cfgParam_sniffData_load()
 
         # 刷新显示配置参数
-        if self.ui.tabWidget.currentIndex() == 0 :
+        if self.ui.tabWidget.currentIndex() is 0 :
             self.ui.checkBox_key_channel.setChecked(self.cfgParam_sniffData_dict["key_selection"]["key_ch"])
             self.ui.checkBox_key_resTime.setChecked(self.cfgParam_sniffData_dict["key_selection"]["key_receiveTime"])
             self.ui.checkBox_key_busType.setChecked(self.cfgParam_sniffData_dict["key_selection"]["key_busType"])
@@ -79,7 +79,7 @@ class Dialog_sniffDataSetting(QtWidgets.QDialog):
                 self.ui.checkBox_key_all.setChecked(True)
             else:
                 self.ui.checkBox_key_all.setChecked(False)
-        elif self.ui.tabWidget.currentIndex() == 1 :
+        elif self.ui.tabWidget.currentIndex() is 1 :
             self.ui.checkBox_isEnableFilter.setChecked(self.cfgParam_sniffData_dict["filter_cfg"]["isEnableFilter"])
             self.ui.lineEdit_idmask.setText(self.cfgParam_sniffData_dict["filter_cfg"]["filter_IDMask"])
             self.ui.lineEdit_tarId.setText(self.cfgParam_sniffData_dict["filter_cfg"]["filter_tarID"])
@@ -97,7 +97,7 @@ class Dialog_sniffDataSetting(QtWidgets.QDialog):
         param = AppUtilitiesClass.cfgParam_sniffData_load()
 
         # 读取界面修改后的参数
-        if self.ui.tabWidget.currentIndex() == 0 :
+        if self.ui.tabWidget.currentIndex() is 0 :
             param["key_selection"]["key_ch"] = self.ui.checkBox_key_channel.isChecked()
             param["key_selection"]["key_receiveTime"] = self.ui.checkBox_key_resTime.isChecked()
             param["key_selection"]["key_busType"] = self.ui.checkBox_key_busType.isChecked()
@@ -107,7 +107,7 @@ class Dialog_sniffDataSetting(QtWidgets.QDialog):
             param["key_selection"]["key_data"] = self.ui.checkBox_key_data.isChecked()
             param["key_selection"]["key_timestamp"] = self.ui.checkBox_key_timestamp.isChecked()
 
-        elif self.ui.tabWidget.currentIndex() == 1 :
+        elif self.ui.tabWidget.currentIndex() is 1 :
             param["filter_cfg"]["isEnableFilter"] = self.ui.checkBox_isEnableFilter.isChecked()
             param["filter_cfg"]["filter_IDMask"] = self.ui.lineEdit_idmask.text()
             param["filter_cfg"]["filter_tarID"] = self.ui.lineEdit_tarId.text()

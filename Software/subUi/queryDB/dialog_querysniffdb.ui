@@ -12,7 +12,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>813</width>
+    <width>815</width>
     <height>601</height>
    </rect>
   </property>
@@ -219,7 +219,7 @@
        <item>
         <widget class="QPushButton" name="pushButton_outputcsv">
          <property name="text">
-          <string>Export csv file</string>
+          <string>Export blf file</string>
          </property>
         </widget>
        </item>

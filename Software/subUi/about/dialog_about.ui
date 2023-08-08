@@ -148,7 +148,7 @@
      <item>
       <widget class="QLabel" name="label_4">
        <property name="text">
-        <string>Copyright 2023 The zeekr zero Ltd. All rights reserved</string>
+        <string>Copyright 2023 The ZEEKR ZERO. All rights reserved.</string>
        </property>
       </widget>
      </item>

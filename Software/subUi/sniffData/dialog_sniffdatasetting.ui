@@ -52,7 +52,7 @@
    <item row="0" column="0">
     <widget class="QTabWidget" name="tabWidget">
      <property name="currentIndex">
-      <number>0</number>
+      <number>1</number>
      </property>
      <widget class="QWidget" name="tab">
       <attribute name="title">
@@ -236,7 +236,7 @@
        <item row="1" column="0">
         <widget class="QGroupBox" name="groupBox_2">
          <property name="title">
-          <string>ID过滤</string>
+          <string>ID</string>
          </property>
          <layout class="QGridLayout" name="gridLayout_4">
           <item row="0" column="0">
@@ -249,7 +249,7 @@
                </font>
               </property>
               <property name="text">
-               <string>ID掩码</string>
+               <string>ID mask</string>
               </property>
              </widget>
             </item>
@@ -268,7 +268,7 @@
                </font>
               </property>
               <property name="text">
-               <string>目标ID</string>
+               <string>Target ID</string>
               </property>
              </widget>
             </item>
@@ -285,14 +285,14 @@
          <item>
           <widget class="QRadioButton" name="radioButton_and">
            <property name="text">
-            <string>与</string>
+            <string>and</string>
            </property>
           </widget>
          </item>
          <item>
           <widget class="QRadioButton" name="radioButton_or">
            <property name="text">
-            <string>或</string>
+            <string>or</string>
            </property>
           </widget>
          </item>
@@ -301,7 +301,7 @@
        <item row="3" column="0">
         <widget class="QGroupBox" name="groupBox_3">
          <property name="title">
-          <string>数据过滤</string>
+          <string>Data</string>
          </property>
          <layout class="QGridLayout" name="gridLayout_5">
           <item row="0" column="0">
@@ -314,7 +314,7 @@
                </font>
               </property>
               <property name="text">
-               <string>数据掩码</string>
+               <string>Data mask</string>
               </property>
              </widget>
             </item>
@@ -333,7 +333,7 @@
                </font>
               </property>
               <property name="text">
-               <string>目标数据</string>
+               <string>Target data</string>
               </property>
              </widget>
             </item>
@@ -353,7 +353,7 @@
           </font>
          </property>
          <property name="text">
-          <string>启用过滤器</string>
+          <string>Enable filter</string>
          </property>
         </widget>
        </item>

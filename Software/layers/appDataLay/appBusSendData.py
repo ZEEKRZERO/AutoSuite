@@ -42,6 +42,7 @@ class ThreadObj_App_busSendData(ThreadObj_base):
             payload = payload[:Length]
         # pack data
         canDataBytes = AppUtilitiesClass.convert_CANpacket2Bytes(payload, frame_id)
+        print("canDataBytes", canDataBytes)
         self.signal_busSendData.emit(canDataBytes)
 
 

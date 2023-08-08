@@ -79,9 +79,14 @@ class GroupBox_signalFuzz(QtWidgets.QDialog):
         self.threadObj_fuzz.base_connect(self.mainWin) # 基本信号连接
         self.signal_sendFuzzSignalData.connect(self.threadObj_fuzz.fuzz_slot)
         self.threadObj_fuzz.signal_fuzzData.connect(self.threadObj_ioPort.devices_sendByteArrays_slot)
+        self.threadObj_ioPort.signal_devices_info_disconnect.connect(self.cancel_timer_send)  # 设备断开连接，停止定时发送
         self.destroyed.connect(self.thread_fuzz.quit)
 
         self.thread_fuzz.start()
+    
+    @Slot()
+    def cancel_timer_send(self):
+        self.ui.checkBox_timerSend.setChecked(False)
 
     # 显示发送信号列表表格的右键菜单
     @Slot(int)
@@ -106,7 +111,7 @@ class GroupBox_signalFuzz(QtWidgets.QDialog):
     # 设置 tableView_sendSignalList 表头
     @Slot()
     def setTableTitle_tableView_sendSignalList(self):
-        headers = ["name","signal_name","frame_id","start_bit","len","byte_order","UB"]
+        headers = ["name","signal_name","frame_id","start_bit","len_bit","byte_order","UB"]
         self.model_tableView_sendSignalList.setHorizontalHeaderLabels(headers)
         self.ui.tableView_sendSignalList.setModel(self.model_tableView_sendSignalList)
 
@@ -148,7 +153,7 @@ class GroupBox_signalFuzz(QtWidgets.QDialog):
         self.model_tableView_sendSignalList.setItem(self.model_tableView_sendSignalList_currentRow, 2, item)
         item = QStandardItem(data_dict["start_bit"])
         self.model_tableView_sendSignalList.setItem(self.model_tableView_sendSignalList_currentRow, 3, item)
-        item = QStandardItem(data_dict["len"])
+        item = QStandardItem(data_dict["len_bit"])
         self.model_tableView_sendSignalList.setItem(self.model_tableView_sendSignalList_currentRow, 4, item)
         item = QStandardItem(data_dict["byte_order"])
         self.model_tableView_sendSignalList.setItem(self.model_tableView_sendSignalList_currentRow, 5, item)

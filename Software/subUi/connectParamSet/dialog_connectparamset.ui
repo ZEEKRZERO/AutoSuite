@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>441</width>
+    <width>481</width>
     <height>424</height>
    </rect>
   </property>
@@ -412,9 +412,16 @@
               <widget class="QComboBox" name="comboBox_cfgFile">
                <property name="minimumSize">
                 <size>
-                 <width>80</width>
+                 <width>120</width>
                  <height>20</height>
                 </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_newNode">
+               <property name="text">
+                <string>new node</string>
                </property>
               </widget>
              </item>

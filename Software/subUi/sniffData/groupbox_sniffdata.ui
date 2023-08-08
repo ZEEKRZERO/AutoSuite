@@ -60,6 +60,13 @@
       </spacer>
      </item>
      <item>
+      <widget class="QPushButton" name="pushButton_setting_3">
+       <property name="text">
+        <string>export blf file</string>
+       </property>
+      </widget>
+     </item>
+     <item>
       <widget class="QPushButton" name="pushButton_setting_2">
        <property name="text">
         <string>Sniff Setting</string>

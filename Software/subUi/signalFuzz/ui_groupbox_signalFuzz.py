@@ -65,6 +65,11 @@ class Ui_GroupBox_signalFuzz(object):
 
         self.horizontalLayout.addWidget(self.pushButton_addNewSignal)
 
+        self.pushButton_addNewSignal_2 = QPushButton(self.groupBox)
+        self.pushButton_addNewSignal_2.setObjectName(u"pushButton_addNewSignal_2")
+
+        self.horizontalLayout.addWidget(self.pushButton_addNewSignal_2)
+
         self.horizontalSpacer = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
         self.horizontalLayout.addItem(self.horizontalSpacer)
@@ -173,6 +178,7 @@ class Ui_GroupBox_signalFuzz(object):
         GroupBox_signalFuzz.setWindowTitle(QCoreApplication.translate("GroupBox_signalFuzz", u"Signal FUZZ", None))
         self.groupBox.setTitle(QCoreApplication.translate("GroupBox_signalFuzz", u"Signal list", None))
         self.pushButton_addNewSignal.setText(QCoreApplication.translate("GroupBox_signalFuzz", u"New signal", None))
+        self.pushButton_addNewSignal_2.setText(QCoreApplication.translate("GroupBox_signalFuzz", u"R155 cybersecurity test", None))
         self.pushButton_addSendSignal.setText(QCoreApplication.translate("GroupBox_signalFuzz", u"-->", None))
         self.groupBox_2.setTitle(QCoreApplication.translate("GroupBox_signalFuzz", u"Transmission signal list", None))
         self.pushButton_clearSendSignalList.setText(QCoreApplication.translate("GroupBox_signalFuzz", u"Clear list", None))

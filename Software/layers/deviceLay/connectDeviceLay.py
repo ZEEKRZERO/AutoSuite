@@ -354,6 +354,7 @@ class ThreadObj_IOManage(ThreadObj_base):
     @Slot(bytes)
     def devices_sendByteArrays_slot(self, byteArrays):
         
+        # print("byteArrays", byteArrays)
         if self.deivceObj is None or self.connectStatus == False:
             # 提示设备未连接, 尝试进行连接
             self.devices_open_slot()

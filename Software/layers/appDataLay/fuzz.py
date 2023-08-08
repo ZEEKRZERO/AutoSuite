@@ -27,7 +27,7 @@ class ThreadObj_App_fuzz(ThreadObj_base):
         for func in funclist:
             frame_id = int(func["frame_id"],16)
             start_bit = int(func["start_bit"],10)
-            length = int(func["len"],10)
+            length = int(func["len_bit"],10)
             byte_order = func["byte_order"]
             ub = func["UB"]
             fuzzed_bytes = self.afl_template_fuzz(self.CAN_PACKET,start_bit,length,byte_order)

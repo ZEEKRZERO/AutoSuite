@@ -64,7 +64,7 @@ class ThreadObj_App_dbcDecode(ThreadObj_base):
                         "signal_name": sig.name,
                         "frame_id": hex(msg.frame_id),
                         "start_bit": str(sig.start),
-                        "len" : str(sig.length),
+                        "len_bit" : str(sig.length),
                         "byte_order" : sig.byte_order,
                     }
                     

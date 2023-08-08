@@ -117,6 +117,6 @@ class Ui_Dialog_about(object):
         self.label_2.setText(QCoreApplication.translate("Dialog_about", u"www.autosuite.org", None))
         self.label_5.setText(QCoreApplication.translate("Dialog_about", u"version: 1.0", None))
         self.label_6.setText(QCoreApplication.translate("Dialog_about", u"Built on 2023/7/27", None))
-        self.label_4.setText(QCoreApplication.translate("Dialog_about", u"Copyright 2023 The zeekr zero Ltd. All rights reserved", None))
+        self.label_4.setText(QCoreApplication.translate("Dialog_about", u"Copyright 2023 The ZEEKR ZERO. All rights reserved.", None))
     # retranslateUi
 

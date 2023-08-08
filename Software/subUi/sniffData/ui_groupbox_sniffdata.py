@@ -62,6 +62,11 @@ class Ui_GroupBox_sniffData(object):
 
         self.horizontalLayout_13.addItem(self.horizontalSpacer_4)
 
+        self.pushButton_setting_3 = QPushButton(GroupBox_sniffData)
+        self.pushButton_setting_3.setObjectName(u"pushButton_setting_3")
+
+        self.horizontalLayout_13.addWidget(self.pushButton_setting_3)
+
         self.pushButton_setting_2 = QPushButton(GroupBox_sniffData)
         self.pushButton_setting_2.setObjectName(u"pushButton_setting_2")
 
@@ -126,6 +131,7 @@ class Ui_GroupBox_sniffData(object):
         GroupBox_sniffData.setWindowTitle(QCoreApplication.translate("GroupBox_sniffData", u"Sinffing", None))
         self.checkBox_suspend.setText(QCoreApplication.translate("GroupBox_sniffData", u"Suspend", None))
         self.checkBox_rtSave.setText(QCoreApplication.translate("GroupBox_sniffData", u"Save to DB", None))
+        self.pushButton_setting_3.setText(QCoreApplication.translate("GroupBox_sniffData", u"export blf file", None))
         self.pushButton_setting_2.setText(QCoreApplication.translate("GroupBox_sniffData", u"Sniff Setting", None))
         self.pushButton_clear_2.setText(QCoreApplication.translate("GroupBox_sniffData", u"Clear", None))
         self.label.setText(QCoreApplication.translate("GroupBox_sniffData", u"Total", None))

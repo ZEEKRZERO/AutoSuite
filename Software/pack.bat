@@ -1,4 +1,3 @@
-pyinstaller mainWindow.py
 pyinstaller mainWindow.spec
 set "source_folder1=%cd%\cfg"
 set "source_folder2=%cd%\data"

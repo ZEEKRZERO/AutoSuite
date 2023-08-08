@@ -25,7 +25,7 @@ class Ui_Dialog_connectParamSet(object):
     def setupUi(self, Dialog_connectParamSet):
         if not Dialog_connectParamSet.objectName():
             Dialog_connectParamSet.setObjectName(u"Dialog_connectParamSet")
-        Dialog_connectParamSet.resize(441, 424)
+        Dialog_connectParamSet.resize(481, 424)
         icon = QIcon()
         icon.addFile(u":/icons/ConnectParamSet.png", QSize(), QIcon.Normal, QIcon.Off)
         Dialog_connectParamSet.setWindowIcon(icon)
@@ -293,9 +293,14 @@ class Ui_Dialog_connectParamSet(object):
 
         self.comboBox_cfgFile = QComboBox(self.groupBox_4)
         self.comboBox_cfgFile.setObjectName(u"comboBox_cfgFile")
-        self.comboBox_cfgFile.setMinimumSize(QSize(80, 20))
+        self.comboBox_cfgFile.setMinimumSize(QSize(120, 20))
 
         self.horizontalLayout_11.addWidget(self.comboBox_cfgFile)
+
+        self.pushButton_newNode = QPushButton(self.groupBox_4)
+        self.pushButton_newNode.setObjectName(u"pushButton_newNode")
+
+        self.horizontalLayout_11.addWidget(self.pushButton_newNode)
 
 
         self.gridLayout_8.addLayout(self.horizontalLayout_11, 0, 0, 1, 1)
@@ -391,6 +396,7 @@ class Ui_Dialog_connectParamSet(object):
         self.groupBox_7.setTitle(QCoreApplication.translate("Dialog_connectParamSet", u"Bus parameter configuration", None))
         self.groupBox_4.setTitle(QCoreApplication.translate("Dialog_connectParamSet", u"FlexRay configuration", None))
         self.label_9.setText(QCoreApplication.translate("Dialog_connectParamSet", u"Node", None))
+        self.pushButton_newNode.setText(QCoreApplication.translate("Dialog_connectParamSet", u"new node", None))
         self.groupBox_5.setTitle(QCoreApplication.translate("Dialog_connectParamSet", u"CAN/CANFD configuration", None))
         self.label_10.setText(QCoreApplication.translate("Dialog_connectParamSet", u"Bus rate", None))
         self.checkBox_canCfg_r120.setText(QCoreApplication.translate("Dialog_connectParamSet", u"Terminal resistance", None))

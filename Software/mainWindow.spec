@@ -26,17 +26,18 @@ exe = EXE(
     a.scripts,
     [],
     exclude_binaries=True,
-    name='mainWindow',
+    name='AutoSuite',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
     upx=True,
-    console=True,
+    console=False,
     disable_windowed_traceback=False,
     argv_emulation=False,
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
+    icon='D:\\AutoHostDep\\code\\autoSuite\\AutoSuite-1.2\\AutoSuite\\icons\\zeekr.ico'
 )
 coll = COLLECT(
     exe,

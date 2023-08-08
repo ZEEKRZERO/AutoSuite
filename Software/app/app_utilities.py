@@ -206,7 +206,7 @@ class AppUtilitiesClass :
         create_table_query = f"CREATE TABLE IF NOT EXISTS {tableName} ( signal_name TEXT PRIMARY KEY, \
                                                                         frame_id TEXT,\
                                                                         start_bit TEXT,\
-                                                                        len TEXT,\
+                                                                        len_bit TEXT,\
                                                                         byte_order TEXT)"
         query.exec(create_table_query)
 
@@ -220,18 +220,18 @@ class AppUtilitiesClass :
                         signal_name = :signal_name, \
                         frame_id = :frame_id, \
                         start_bit = :start_bit, \
-                        len = :len,\
+                        len_bit = :len_bit,\
                         byte_order = :byte_order \
                         WHERE signal_name = :signal_name"     
         else:
-            insertOrUpdate_string = f"INSERT INTO {tableName} (signal_name, frame_id, start_bit, len, byte_order) \
-                VALUES (:signal_name, :frame_id, :start_bit, :len, :byte_order)"
+            insertOrUpdate_string = f"INSERT INTO {tableName} (signal_name, frame_id, start_bit, len_bit, byte_order) \
+                VALUES (:signal_name, :frame_id, :start_bit, :len_bit, :byte_order)"
         
         query.prepare(insertOrUpdate_string)
         query.bindValue(":signal_name", data_dict["signal_name"])
         query.bindValue(":frame_id", data_dict["frame_id"])
         query.bindValue(":start_bit", data_dict["start_bit"])
-        query.bindValue(":len", data_dict["len"])
+        query.bindValue(":len_bit", data_dict["len_bit"])
         query.bindValue(":byte_order", data_dict["byte_order"])
 
         query.exec()
@@ -251,7 +251,7 @@ class AppUtilitiesClass :
                                                                         signal_name TEXT PRIMARY KEY, \
                                                                         frame_id TEXT,\
                                                                         start_bit TEXT,\
-                                                                        len TEXT,\
+                                                                        len_bit TEXT,\
                                                                         byte_order TEXT,\
                                                                         UB TEXT)"
         query.exec(create_table_query)
@@ -267,20 +267,20 @@ class AppUtilitiesClass :
                         signal_name = :signal_name, \
                         frame_id = :frame_id, \
                         start_bit = :start_bit, \
-                        len = :len,\
+                        len_bit = :len_bit,\
                         byte_order = :byte_order, \
                         UB = :UB \
                         WHERE signal_name = :signal_name"     
         else:
-            insertOrUpdate_string = f"INSERT INTO {tableName} (name, signal_name, frame_id, start_bit, len, byte_order, UB) \
-                VALUES (:name, :signal_name, :frame_id, :start_bit, :len, :byte_order, :UB)"
+            insertOrUpdate_string = f"INSERT INTO {tableName} (name, signal_name, frame_id, start_bit, len_bit, byte_order, UB) \
+                VALUES (:name, :signal_name, :frame_id, :start_bit, :len_bit, :byte_order, :UB)"
         
         query.prepare(insertOrUpdate_string)
         query.bindValue(":name", data_dict["name"])
         query.bindValue(":signal_name", data_dict["signal_name"])
         query.bindValue(":frame_id", data_dict["frame_id"])
         query.bindValue(":start_bit", data_dict["start_bit"])
-        query.bindValue(":len", data_dict["len"])
+        query.bindValue(":len_bit", data_dict["len_bit"])
         query.bindValue(":byte_order", data_dict["byte_order"])
         query.bindValue(":UB", data_dict["UB"])
 
