@@ -9,9 +9,9 @@ AutoSUite consisting of the hardware and software. AutoSuite can be used to acce
 ## 3D
 The STL/DXF/DWG file of metal shell of AutoSuite, you can 3D print or CNC your own AutoSuite shell.
 ## Hardware
-We will upload later.
+Schematic and PCB included, you can make pcb with gerber file, component list is in BOM. 
 ## Firmware 
-We will upload later.
+Including .elf file of MPC5748G and .bin file of ESP32(WiFi module).
 ## Software
 ### Requirements
 ```
